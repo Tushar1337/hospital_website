@@ -1,0 +1,451 @@
+@charset "utf-8";
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+@font-face{
+	font-family: Gotu;
+	src :url(../font/Gotu-Regular.ttf);
+}
+@font-face{
+	font-family: Muli;
+	src:url(../font/Muli-VariableFont_wght.ttf);
+}
+body{
+	width: 100%;
+	height: 100%;
+	font-family: Gotu;
+	background:linear-gradient(135deg,#34c7ac ,coral);
+}
+
+.w-80{
+	width: 80%;
+	height: auto;
+	margin: auto;
+	padding: 10px 10px;
+}
+/* Start Header Coding */
+
+header{
+	width: 100%;
+	height: 6.5%;
+	background: #287485;
+	float: left;
+	position:fixed;
+	top:1;
+	z-index:1;
+
+}
+
+header .menu{
+	width: 80%;
+	height: 55px;
+	text-align:center;
+	margin:auto;
+
+}
+
+header .menu .brand-name{
+	width: 25%;
+	float: left;
+}
+header .menu .brand-name a{
+	text-decoration: none;
+}
+header .menu .brand-name h2{
+	font-family: Gotu;
+	font-size: 35px;
+	color: white;
+}
+/* start nav ul li coding */
+header .menu nav{
+	width: 65%;
+	float: left;
+}
+
+header .menu nav ul{
+	list-style: none;
+}
+
+header .menu nav ul li{
+	display: inline-block;
+	margin: 8px 10px;
+	padding: 2px 10px;
+}
+
+header .menu nav ul li:hover{
+	border:none;
+	border-bottom: 3px solid coral;
+
+}
+
+header .menu nav ul li:hover a{
+	color: #00bcd4;
+	font-size:25px;
+}
+
+header .menu nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-family: Gotu;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+/* End Header Coding */
+
+/* Start custom scrollbar coding*/
+
+body::-webkit-scrollbar{
+	width: 10px;
+	background: black;
+}
+
+body::-webkit-scrollbar-thumb{
+	background: yellow;
+}
+
+/* End custom scrollbar coding*/
+/* Start Section Coding */
+
+section{
+	width: 100%;
+	float: left;
+	margin-top: 100px;
+}
+section .section-img{
+	width: 100%;
+	height: 480px;
+	background: url(../images/1.jpg) no-repeat;
+    background-size: cover;
+}
+section .section-bg-box{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+	text-align: center;
+	padding: 150px 0;
+}
+section .section-bg-box h1{
+	background: coral;
+	color: white;
+	font-size: 50px;
+	width: 50%;
+	margin: auto;
+}
+section .section-bg-box h2{
+	background: #6495e3;
+	color: white;
+	width: 50%;
+	margin: auto;
+	font-size: 20px;
+}
+section .welcome-text{
+	font-size: 35px;
+    text-transform: uppercase;
+    background: coral;
+    width: 60%;
+    padding: 0 5px;
+    color: white;
+    border-radius: 2px 10px 10px 2px;
+}
+section p{
+	font-size: 22px;
+	text-align: justify;
+}
+section ul{
+	padding: 0;
+	margin-left:10px;
+	margin-top: 20px;
+	list-style: none;
+}
+section ul li{
+	font-size: 20px;
+	line-height: 30px;
+}
+
+section h2{
+	font-size: 30px;
+}
+section .about-box{
+	width: 100%;
+}
+section .about-box p{
+	font-size: 18px;
+}
+section .about-box div:nth-child(1){
+	width: 60%;
+	float: left;
+	padding: 10px;
+}
+section .about-box div:nth-child(2){
+	width: 40%;
+	float: left;
+	padding: 10px;
+}
+/* gallery Coding */
+section .form-box{
+	padding: 20px;
+}
+section .form-box .gallery{
+	width: 100%;
+	height: 200px;
+	padding: 0 5px;
+}
+section .form-box .gallery div{
+  width: 25%;
+  height: 100%;
+  float: left;
+  padding: 5px;
+}
+section .form-box .gallery div img{
+	border-radius: 10px;
+}
+section .form-box form{
+	margin-top: 20px;
+}
+section .form-box input:focus,textarea:focus,button:focus{
+	outline: none;
+}
+section .form-box input,textarea{
+	width: 50%;
+	height: 35px;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	padding: 0 10px;
+	font-family: Gotu;
+	font-size: 16px;
+}
+textarea{
+	height: 100px;
+}
+section .form-box form #register-btn,#login-btn,#contact-btn{
+	font-family: Muli;
+	font-size: 20px;
+	color: white;
+	padding: 10px;
+	border:none;
+	cursor: pointer;
+	border-radius: 3px;
+	color:black;
+}
+section .form-box form #login-btn{
+	background: coral;
+}
+section .form-box form #contact-btn{
+	background: blue;
+}
+section .form-box form #register-btn{
+	background: #007bff;
+}
+section .form-box form #contact-btn:hover{
+	background: #080896;
+}
+section .form-box form #login-btn:hover{
+	background: #9E0707;
+}
+section .form-box form #register-btn:hover{
+	background: blue;
+}
+/* End Section Coding */
+/* Start Footer Coding */
+
+footer{
+	width: 100%;
+	background:#287485;
+	float: left;
+	color: white;
+	padding: 30px 0;
+
+}
+
+footer .footer-box{
+	width: 25%;
+	float: left;
+	height: 100%;
+}
+
+footer .footer-box a{
+	display: block;
+	font-family: Gotu;
+	color: white;
+	font-size: 20px;
+	text-transform: capitalize;
+}
+footer .footer-box a:hover{
+	text-decoration: none;
+	color: coral;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  position: relative;
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 600px; /* Should be removed. Only for demonstration */
+  margin:50px;
+  text-align:center;
+  transform-style: preserve-3d;
+
+}
+.dis{
+display:none;
+text-align:center;
+
+}
+.column:hover .dis{
+display:inline-block;
+
+}
+.column:hover{
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+
+}
+.column:hover img{
+    display:none;
+}
+
+
+.row {
+    margin-left: 150px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin:100px;
+
+}
+ul:first-child{
+
+    color:#FF0000;
+}
+section ul li:hover{
+	border:none;
+	text-decoration-style:dotted;
+	text-decoration:underline dashed coral;
+	font-size:25px;
+	cursor: default;
+
+}
+.t1{
+border-radius:10px 0px 10px 0px;
+}
+.t2{
+border-radius:10px 0px 10px 0px;
+}
+
+.bg-modal{
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.7);
+    position:absolute;
+    top:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    display:none;
+}
+.modal-content{
+width:500px;
+height:400px;
+background:linear-gradient(135deg,#34c7ac ,coral);
+border-radius:5px;
+text-align:center;
+padding:20px;
+position:relative;
+}
+
+input{
+height:30px;
+display:block;
+margin:0 auto;
+}
+
+.close{
+position:absolute;
+top:0;
+font-size:42px;
+right:15px;
+transform:rotate(45deg);
+cursor:pointer;
+
+}
+.close:hover{
+color:red;
+}
+.bg-modal1{
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.7);
+    position:absolute;
+    top:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    display:none;
+}
+.modal-content1{
+width:500px;
+height:850px;
+background:linear-gradient(135deg,#34c7ac ,coral);
+border-radius:5px;
+text-align:center;
+padding:20px;
+position:relative;
+}
+.close1{
+position:absolute;
+top:0;
+font-size:42px;
+right:15px;
+transform:rotate(45deg);
+cursor:pointer;
+
+}
+.close1:hover{
+color:red;
+}
+.bg-modal11{
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.7);
+    position:absolute;
+    top:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    display:none;
+}
+.modal-content11{
+width:500px;
+height:550px;
+background:linear-gradient(135deg,#34c7ac ,coral);
+border-radius:5px;
+text-align:center;
+padding:20px;
+position:relative;
+}
+.close11{
+position:absolute;
+top:0;
+font-size:42px;
+right:15px;
+transform:rotate(45deg);
+cursor:pointer;
+
+}
+.close11:hover{
+color:red;
+}
+/* End Footer Coding */
